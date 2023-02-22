@@ -1,7 +1,8 @@
 <template>
   <div class="flex">
     <sidebar />
-    <div class="p-4">
+    <div class="w-full p-2">
+      <breadcrumb />
       <Nuxt />
     </div>
     

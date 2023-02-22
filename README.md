@@ -2,6 +2,8 @@
 
 ## Build Setup
 
+### runs on node v16.17.1
+
 ```bash
 # install dependencies
 $ npm install

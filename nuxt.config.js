@@ -37,6 +37,23 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyBvGmxYaiw1MsCFSlAYdl7hc1BclN756YA",
+          authDomain: "mainan-firesotre.firebaseapp.com",
+          projectId: "mainan-firesotre",
+          storageBucket: "mainan-firesotre.appspot.com",
+          messagingSenderId: "350245759585",
+          appId: "1:350245759585:web:019029faad1cb7898b1820"
+        },
+        services: {
+          firestore: true // Just as example. Can be any other service.
+        }
+      }
+    ]
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

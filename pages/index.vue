@@ -30,7 +30,6 @@ export default {
       doc.id = item.id
       docs.push(doc)
     });
-    console.log(docs)
     return {
       docs,
       activeFilter: []
@@ -47,8 +46,7 @@ export default {
         const doc = item.data()
         doc.id = item.id
         docs.push(doc)
-      });
-      console.log(docs, 'filter')
+      })
       this.docs = docs
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="text-gray-300 capitalize bg-gray-100 p-2 select-none">
-    {{ breadcrumb  }}
+    <nuxt-link to="/">Dashboard</nuxt-link> {{ breadcrumb  }}
   </div>
 </template>
 
@@ -9,7 +9,7 @@
     computed: {
       breadcrumb () {
         const routeName = this.$route.path
-        return routeName === '/' ? 'Dashboard > Show': `Dashboard > ${routeName.replace('/', '')}`
+        return routeName === '/' ? ' > Show': ` > ${routeName.replace('/', '')}`
       }
     }
   }

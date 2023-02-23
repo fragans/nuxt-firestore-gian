@@ -9,7 +9,9 @@
         <span>isPublished</span>
       </button>
     </nav>
-    <div class="grid grid-cols-3 grid-row-1 gap-3 py-4 px-3 rounded">
+    <div class="w-full text-gray-300 px-4 text-right"> {{ docs.length }} reportase ditemukan </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-3 gap-y-4 py-4 px-3 rounded">
+      
       <div v-for="(doc, key) in docs" :key="key">
         <card :item="doc"></card>
       </div>
